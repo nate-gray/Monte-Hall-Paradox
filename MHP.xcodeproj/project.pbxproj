@@ -13,6 +13,13 @@
 		4E38B6341E495E230009087C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E38B6321E495E230009087C /* Main.storyboard */; };
 		4E38B6361E495E230009087C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E38B6351E495E230009087C /* Assets.xcassets */; };
 		4E38B6391E495E230009087C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E38B6371E495E230009087C /* LaunchScreen.storyboard */; };
+		4E38B6461E495F430009087C /* door.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E38B6401E495F430009087C /* door.png */; };
+		4E38B6471E495F430009087C /* looser.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E38B6411E495F430009087C /* looser.png */; };
+		4E38B6481E495F430009087C /* LoserHorns.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E38B6421E495F430009087C /* LoserHorns.wav */; };
+		4E38B6491E495F430009087C /* redup.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E38B6431E495F430009087C /* redup.png */; };
+		4E38B64A1E495F430009087C /* winner.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E38B6441E495F430009087C /* winner.png */; };
+		4E38B64B1E495F430009087C /* WINNER.WAV in Resources */ = {isa = PBXBuildFile; fileRef = 4E38B6451E495F430009087C /* WINNER.WAV */; };
+		4E38B6711E4980670009087C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E38B6701E4980670009087C /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		4E38B6351E495E230009087C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E38B6381E495E230009087C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E38B63A1E495E230009087C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E38B6401E495F430009087C /* door.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = door.png; sourceTree = "<group>"; };
+		4E38B6411E495F430009087C /* looser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = looser.png; sourceTree = "<group>"; };
+		4E38B6421E495F430009087C /* LoserHorns.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = LoserHorns.wav; sourceTree = "<group>"; };
+		4E38B6431E495F430009087C /* redup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redup.png; sourceTree = "<group>"; };
+		4E38B6441E495F430009087C /* winner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = winner.png; sourceTree = "<group>"; };
+		4E38B6451E495F430009087C /* WINNER.WAV */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = WINNER.WAV; sourceTree = "<group>"; };
+		4E38B6701E4980670009087C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E38B6711E4980670009087C /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +59,7 @@
 			children = (
 				4E38B6281E495E230009087C /* MHP */,
 				4E38B6271E495E230009087C /* Products */,
+				4E38B66F1E4980660009087C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +90,23 @@
 		4E38B6291E495E230009087C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4E38B6401E495F430009087C /* door.png */,
+				4E38B6411E495F430009087C /* looser.png */,
+				4E38B6421E495F430009087C /* LoserHorns.wav */,
+				4E38B6431E495F430009087C /* redup.png */,
+				4E38B6441E495F430009087C /* winner.png */,
+				4E38B6451E495F430009087C /* WINNER.WAV */,
 				4E38B62A1E495E230009087C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4E38B66F1E4980660009087C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E38B6701E4980670009087C /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +167,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E38B64A1E495F430009087C /* winner.png in Resources */,
 				4E38B6391E495E230009087C /* LaunchScreen.storyboard in Resources */,
+				4E38B6481E495F430009087C /* LoserHorns.wav in Resources */,
+				4E38B6491E495F430009087C /* redup.png in Resources */,
 				4E38B6361E495E230009087C /* Assets.xcassets in Resources */,
+				4E38B6471E495F430009087C /* looser.png in Resources */,
 				4E38B6341E495E230009087C /* Main.storyboard in Resources */,
+				4E38B6461E495F430009087C /* door.png in Resources */,
+				4E38B64B1E495F430009087C /* WINNER.WAV in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
