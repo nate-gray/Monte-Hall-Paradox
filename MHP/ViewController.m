@@ -157,19 +157,19 @@ bool isWinner;
     
     if (doorRevealed == 1) {
         
-        [self revealDoor1];
+        [self revealDoorNum:door1];
         
     }
     
     if (doorRevealed == 2) {
         
-        [self revealDoor2];
+        [self revealDoorNum:door2];
         
     }
     
     if (doorRevealed == 3) {
         
-        [self revealDoor3];
+        [self revealDoorNum:door3];
         
     }
     
@@ -179,9 +179,11 @@ bool isWinner;
     
 }
 
-- (void)revealDoor1 {
+- (void)revealDoorNum:(id)doorID {
     
-    if (doorWinner == 1) {
+    UIImageView *doorIN = (UIImageView *) doorID;
+    
+    if (doorWinner == doorIN.tag) {
         
         imageView2 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"winner"]];
         
@@ -199,72 +201,19 @@ bool isWinner;
     [UIView setAnimationDuration:1.50];
     [UIView setAnimationDelegate:self];
     [UIView setAnimationDidStopSelector:@selector(transitionDidStop: finished: context:)];
-    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:door1 cache:YES];
+    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:doorIN cache:YES];
     
-    [door1 addSubview:imageView2];
+    [doorIN addSubview:imageView2];
     [UIView commitAnimations];
     
 }
 
-- (void)revealDoor2 {
-    
-    if (doorWinner == 2) {
-        
-        imageView2 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"winner"]];
-        
-    }
-    
-    else {
-        
-        imageView2 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"looser"]];
-        
-    }
-    
-    [imageView2 setFrame:CGRectMake(0, 45, 82, 72)];
-    
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:1.50];
-    [UIView setAnimationDelegate:self];
-    [UIView setAnimationDidStopSelector:@selector(transitionDidStop: finished: context:)];
-    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:door2 cache:YES];
-    
-    [door2 addSubview:imageView2];
-    [UIView commitAnimations];
-    
-}
-
-- (void)revealDoor3 {
-    
-    if (doorWinner == 3) {
-        
-        imageView2 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"winner"]];
-        
-    }
-    
-    else {
-        
-        imageView2 = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"looser"]];
-        
-    }
-    
-    [imageView2 setFrame:CGRectMake(0, 45, 82, 72)];
-    
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:1.50];
-    [UIView setAnimationDelegate:self];
-    [UIView setAnimationDidStopSelector:@selector(transitionDidStop: finished: context:)];
-    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:door3 cache:YES];
-    
-    [door3 addSubview:imageView2];
-    [UIView commitAnimations];
-    
-}
 
 - (IBAction)showResults:(id)sender {
     
-    [self revealDoor1];
-    [self revealDoor2];
-    [self revealDoor3];
+    [self revealDoorNum:door1];
+    [self revealDoorNum:door2];
+    [self revealDoorNum:door3];
     
     showBTN.hidden = true;
     resetBTN.hidden = false;

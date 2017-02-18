@@ -65,9 +65,7 @@
 //Other
 
 - (void)showArrow;
-- (void)revealDoor1;
-- (void)revealDoor2;
-- (void)revealDoor3;
+- (void)revealDoorNum:(id)doorID;
 - (void) resetDoors;
 
 @end
