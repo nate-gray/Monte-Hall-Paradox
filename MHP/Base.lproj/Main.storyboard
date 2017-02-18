@@ -21,15 +21,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="door.png" translatesAutoresizingMaskIntoConstraints="NO" id="3SA-PF-Cay">
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="door.png" translatesAutoresizingMaskIntoConstraints="NO" id="3SA-PF-Cay">
                                 <rect key="frame" x="75" y="28" width="82" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="door.png" translatesAutoresizingMaskIntoConstraints="NO" id="Yzo-w2-sqK">
+                            <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="door.png" translatesAutoresizingMaskIntoConstraints="NO" id="Yzo-w2-sqK">
                                 <rect key="frame" x="292" y="28" width="82" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="door.png" translatesAutoresizingMaskIntoConstraints="NO" id="JTQ-BC-KwL">
+                            <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="door.png" translatesAutoresizingMaskIntoConstraints="NO" id="JTQ-BC-KwL">
                                 <rect key="frame" x="499" y="28" width="82" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
